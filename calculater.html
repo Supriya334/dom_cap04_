@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator of js</title>
+</head>
+<body>
 
+  <input type="number" id="inp" placeholder="enter the 1st number">
+  <input type="number" id="second" placeholder="enter 2nd value">
+  <div class="div">
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Division</button>
+  </div>
+</body>
+<script>
+
+let iut=document.getElementById("inp")
+let sec=document.getElementById("second")
+
+function add(){
+    let a=+iut.value;
+    let b=+sec.value
+    alert (a+b)
+}
+
+function sub(){
+    let a =+iut.value
+let b =+sec.value
+alert(a-b)
+}
+
+function mul(){
+    let a=+iut.value
+    let b=+sec.value
+    alert(a*b)
+}
+
+function div(){
+    let a=+iut.value
+    let b=+sec.value
+    alert(a/b)
+}
+</script>
+</html>
